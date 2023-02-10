@@ -1,0 +1,15 @@
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\bin\Debug\net6.0\Activity4_Interface.exe
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\bin\Debug\net6.0\Activity4_Interface.deps.json
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\bin\Debug\net6.0\Activity4_Interface.runtimeconfig.json
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\bin\Debug\net6.0\Activity4_Interface.dll
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\bin\Debug\net6.0\Activity4_Interface.pdb
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\obj\Debug\net6.0\Activity4_Interface.csproj.AssemblyReference.cache
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\obj\Debug\net6.0\Activity4_Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\obj\Debug\net6.0\Activity4_Interface.AssemblyInfoInputs.cache
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\obj\Debug\net6.0\Activity4_Interface.AssemblyInfo.cs
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\obj\Debug\net6.0\Activity4_Interface.csproj.CoreCompileInputs.cache
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\obj\Debug\net6.0\Activity4_Interface.dll
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\obj\Debug\net6.0\refint\Activity4_Interface.dll
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\obj\Debug\net6.0\Activity4_Interface.pdb
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\obj\Debug\net6.0\Activity4_Interface.genruntimeconfig.cache
+C:\Users\Tommy Liang\Documents\Computer Science\intro_to_api\Activity4_Interface\Activity4_Interface\obj\Debug\net6.0\ref\Activity4_Interface.dll

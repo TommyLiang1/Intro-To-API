@@ -2,55 +2,43 @@
 // Intro to API
 // Activity 4
 
-interface Job
+interface IJob
 {
-    void profession();
-    void role();
-    bool sustainable(int num);
+    string Name { get; set; }
+    string Profession { get; set; }
+    string Role { get; set; }
+    int Salary { get; set; }
+    void Sustainable(int num);
 }
-public class Person : Job
+public class Person : IJob
 {
-    private string field = "Computer Science";
-    private string position = "student";
-    private int earnings = 0;
+    public string Name { get; set; } = String.Empty;
+    public string Profession { get; set; } = String.Empty;
+    public string Role { get; set; } = String.Empty; 
+    public int Salary { get; set; }
 
-    public void profession()
+    public void Sustainable(int num)
     {
-        if (field == "")
-            Console.WriteLine("This person's \"field\" is currently empty.");
+        string result = "";
+        if (Salary < num)
+            result = "not sustainable!";
         else
-            Console.WriteLine("This person works in the " + field + " field.");
-    }
-
-    public void role()
-    {
-        if (position == "")
-            Console.WriteLine("This person doesn't have a role.");
-        else
-            Console.WriteLine("This person is a(n) " + position + ".");
-    }
-
-    public bool sustainable(int num)
-    {
-        if (earnings < num)
-            return false;
-        else
-            return true;
-    }
-
-    public int Salary
-    {
-        get { return earnings; }
-        set { earnings = value; }
+            result = "sustainable!";
+        Console.WriteLine("This current lifestyle as a(n) " + Role + " with an net income of " + (Salary-num) + " is " + result);
     }
 
     public void OnPersonEmployed(object source, EventArgs args)
     {
         Console.WriteLine("Checking if person is employed");
-        if((position == "" && field == "") || position.ToLower() == "student")
-            Console.WriteLine("Person is unemployed!");
+        var text = "Person";
+        if (Name != null)
+            text = Name;
+        if (Role.ToLower() == "student")
+            Console.WriteLine(text + " is a student!");
+        else if (Profession == "" || Role == "")
+            Console.WriteLine(text + " is unemployed!");
         else
-            Console.WriteLine("Person is employed!");
+            Console.WriteLine(text + " is employed!");
     }
 }
 
@@ -59,7 +47,7 @@ public class PersonEmployed
     public delegate void PersonEmployedEventHandler(object source, EventArgs args);
 
     public event PersonEmployedEventHandler? PersonEmploy;
-    public void isEmployed(Person p1)
+    public void IsEmployed(Person p1)
     {
         Console.WriteLine("Running Employed Checker Event...");
         Thread.Sleep(3000);
@@ -82,16 +70,14 @@ class Program
         var status = new PersonEmployed();
         status.PersonEmploy += me.OnPersonEmployed;
         
-        me.Salary = 10;
-        me.profession();
-        me.role();
+        me.Salary = 105;
+        me.Name = "Tommy";
+        me.Profession = "Computer Science";
+        me.Role = "Student";
+
         Console.WriteLine("Salary(USD): " + me.Salary);
-        if (me.sustainable(100))
-            Console.WriteLine("Sustainable. Congrats!");
-        else
-            Console.WriteLine("Not Sustainable!");
 
-
-        status.isEmployed(me);
+        me.Sustainable(100);
+        status.IsEmployed(me);
     }
 }
